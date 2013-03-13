@@ -21,10 +21,10 @@
         <h6></h6>
         <a></a>
 
-        Как использовать:
-
-        1) файл ESeoLinks.php положить в папку /extensions/
-        2) прописать в конфиге:
+## Как использовать:
+* файл ESeoLinks.php положить в папку /extensions/
+* прописать в конфиге:
+```php
         'components' => array(
                                 'eseolinks'=>array(
                                             'class'=>'ext.ESeoLinks',
@@ -55,6 +55,8 @@
 
                                                           ),
                                            ),
-
-        3) прописать в /layouts/main.php:
+```
+* прописать в /layouts/main.php:
+```php
         echo Yii::app()->eseolinks->processHtml($content);
+```
